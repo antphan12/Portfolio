@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-switcher {
+    transition: background 0.3s, color 0.3s;
+}
+
+#home {
+    background: #333;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+.project {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme header {
+    background: #222;
+}
+
+.dark-theme .navbar-brand,
+.dark-theme .nav-link {
+    color: #ccc;
+}
+
+.dark-theme .nav-link:hover {
+    color: #fff;
+}
+
+.dark-theme #theme-switcher {
+    background: #333;
+    color: #fff;
+}
+
+.dark-theme #home {
+    background: #222;
+    color: #fff;
+}
+
+.dark-theme footer {
+    background: #222;
+}
+
+.social-icons a {
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f4f4f4;
+}
