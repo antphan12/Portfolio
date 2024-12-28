@@ -10,10 +10,17 @@
 </head>
 
 <body>
+    <!--Home Container-->
     <div class="container">
         <div class="glass-container">
             <nav class="navbar">
                 <div class="name">Anthony Phan</div>
+                <div class="nav-social-media">
+                <a href="https://www.linkedin.com/in/anthony-phan-8bb143231/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/antphan12" class="fa fa-github"></a>
+                <a href="mailto:antphan12@gmail.com" class="fa fa-envelope"></a>
+                <a href="https://www.instagram.com/its_meant12/" class="fa fa-instagram"></a>
+                </div>
             </nav>
             <div class="content">
                 <div class="main">
@@ -21,7 +28,7 @@
                     <p>
                        Welcome to my personal portfolio. Click below to learn more about me.
                     </p>
-                    <button><a href="about.html">About Me!</a></button>
+                    <a href="#aboutMeContainer"><button>About Me!</button></a>
                 </div>
                 <div class="image-wrapper">
                     <img src="./icons/VSA Portrait.jpg">
@@ -30,12 +37,13 @@
         </div>
     </div>
 
-    <div class="container">
+    <!--About Me Container-->
+    <div class="container" id="aboutMeContainer">
         <div class="glass-container">
             <nav class="navbar">
                 <div class="name">About Me</div>
             </nav>
-            <div class="content">
+            <div class="who-am-i-content">
                 <div class="who-am-i">
                     <h1>Who Am I as a Student?</h1>
                     <p>
@@ -45,7 +53,7 @@
                        contribute my skills and continue to grow as a software engineer.
                     </p>
                 </div>
-                <div class="image-container">
+                <div class="cyclone-img">
                     <img src="./icons/Iowa-State-Cyclones-Logo-1978.png" alt="Iowa-State-Cyclones-Logo-1978">
                 </div>
             </div>
