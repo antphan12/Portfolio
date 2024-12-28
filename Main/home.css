@@ -35,6 +35,24 @@ body{
     align-items: center;
 }
 
+#isu{
+    background: linear-gradient(to right, #ff0000, #ffee00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#opportunities{
+    background: linear-gradient(to right, #2d08ff, #ff2a2a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#name{
+    background: linear-gradient(to right, #0026ff, #03ffb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -55,9 +73,10 @@ body{
 
 .name{
     display: inline-block;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
     margin-top: -10px;
+    margin-bottom: 50px;
 }
 
 ul.nav-links{
@@ -68,16 +87,37 @@ ul.nav-links{
 }
 
 li.nav-link{
+    position: relative;
     display: inline-block;
     margin-left: 30px;
-    font-size: 17px;
+    font-size: 23px;
     font-weight: 300;
+}
+
+li.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+li.nav-link:hover::before{
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 .content{
     display: flex;
     flex: 1;
     width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .main{
@@ -125,13 +165,8 @@ button:hover{
     align-items: center;
     justify-content: center;
     max-width: 500px;
-}
-
-.attrebute{
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-    font-size: 12px;
+    border-radius: 16px; 
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.993);
 }
 
 .social-media{
@@ -139,10 +174,92 @@ button:hover{
     margin-top: 20px;
 }
 
+.who-am-i{
+    flex: 1;
+    padding: 20px;
+    background: rgba(3, 3, 3, 0.05); 
+    border-radius: 16px; 
+    box-shadow: 0 10px 30px rgba(223, 222, 222, 0.1); 
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+.who-am-i p{
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left; 
+}
+
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.image-container img{
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.about-me-container{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-me{
+    margin-top: 150px;
+    flex: 1;
+    padding: 20px;
+    background: rgba(3, 3, 3, 0.05); 
+    border-radius: 16px; 
+    box-shadow: 0 10px 30px rgba(223, 222, 222, 0.1); 
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+.about-me p{
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left; 
+}
+
+.portrait{
+    margin-bottom: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+}
+
+.portrait img{
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
 footer{
+    font-size: 24px;
     text-align: center;
     padding: 10px;
-    
+}
+.social-media{
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a{
+    margin: 0 10px;
 }
 
 @media screen and (max-width: 1075px) {
