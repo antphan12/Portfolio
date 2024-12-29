@@ -316,17 +316,6 @@ footer{
   }
 }
 
-@media screen and (max-width: 768px) {
-  .glass-container {
-    max-width: 90vw;
-    padding: 30px;
-  }
-
-  .name {
-    font-size: 40px;
-  }
-}
-
 @media screen and (max-width: 720px) {
   .logo{
     font-size: 22px;
