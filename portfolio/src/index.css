@@ -311,7 +311,7 @@ footer{
 }
 
 @media screen and (max-width: 1075px) {
-  .content {
+  .content{
     flex-direction: column;
   }
 }
@@ -328,63 +328,23 @@ footer{
 }
 
 @media screen and (max-width: 720px) {
-  .logo {
+  .logo{
     font-size: 22px;
   }
-
-  li.nav-link {
+  li.nav-link{
     font-size: 13px;
   }
-
-  .main h2 {
+  .main h2{
     font-size: 28px;
   }
-
-  .main p {
+  .main p{
     font-size: 15px;
   }
-
-  button {
+  button{
     font-size: 13px;
   }
-
-  .image-wrapper img {
+  .image-wrapper img{
     max-width: 400px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .glass-container {
-    max-width: 95vw;
-    padding: 20px;
-  }
-
-  .name {
-    font-size: 30px;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  li.nav-link {
-    font-size: 11px;
-  }
-
-  .main h2 {
-    font-size: 24px;
-  }
-
-  .main p {
-    font-size: 13px;
-  }
-
-  button {
-    font-size: 11px;
-  }
-
-  .image-wrapper img {
-    max-width: 300px;
   }
 }
 
