@@ -328,28 +328,37 @@ footer{
 }
 
 @media screen and (max-width: 720px) {
+  .glass-container {
+    max-width: 95vw;
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
   .logo {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   li.nav-link {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .main h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .main p {
-    font-size: 15px;
-  }
-
-  button {
     font-size: 13px;
   }
 
+  button {
+    font-size: 11px;
+  }
+
   .image-wrapper img {
-    max-width: 400px;
+    max-width: 300px;
   }
 }
 
