@@ -2,6 +2,8 @@
 
 *{
   font-family: 'Quicksand', sans-serif;
+  max-width: 3000px;
+  max-height: 2500px;
 }
 
 html {
