@@ -1,0 +1,18 @@
+// This file is used to configure the build settings for an AWS Amplify project.
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd portfolio
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: portfolio/build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - portfolio/node_modules/**/*
