@@ -78,12 +78,12 @@ body{
 }
 
 .glass-container {
-  display: block;
-  max-width: 72vw;
+   display: block;
+  max-width: 60vw; /* was 72vw */
   margin-top: 10vh;
   margin-bottom: 30px;
   background: rgba(0, 0, 0, 0.56);
-  padding: 50px;
+  padding: 40px; /* was 50px */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(11.6px);
