@@ -246,6 +246,40 @@ button:hover{
   margin: 0 auto;
 }
 
+.project-3{
+  flex: 1;
+  padding: 20px;
+  margin-left: 20px;
+  background: rgba(3, 3, 3, 0.05); 
+  border-radius: 16px; 
+  box-shadow: 0 0px 30px rgba(223, 222, 222, 0.637); 
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+}
+
+.project-3 p{
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left; 
+}
+
+.project-3-img{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.project-3-img img{
+  max-width: 75%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
 .experience{
   display: flex;
   flex: 1;
