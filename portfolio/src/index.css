@@ -178,6 +178,29 @@ button:hover{
   align-items: flex-start;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card img {
+  max-width: 80%;
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
 .project-1{
   flex: 1;
   padding: 20px;
