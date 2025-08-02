@@ -61,10 +61,10 @@ body{
   animation: gradient-animation 5s infinite;
 }
 
-.container, .glass-container, .main, .who-am-i-content, .nav-social-media, .about-me {
+/* .container, .glass-container, .main, .who-am-i-content, .nav-social-media, .about-me {
     opacity: 0;
     transition: transform 0.3s ease-in-out;
-}
+} */
 
 .slide-in-left {
   animation: slideInFromLeft .8s ease-in-out forwards;
