@@ -941,3 +941,79 @@ footer{
     transform: none;
   }
 }
+
+/* Navbar scroll effect */
+.navbar-scrolled {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+/* Project card hover enhancements */
+.project-card {
+  cursor: pointer;
+  will-change: transform, box-shadow;
+  transition: all 0.3s ease;
+}
+
+/* Main heading typing effect */
+.main h2 {
+  min-height: 80px;
+  white-space: pre-line;
+}
+
+/* Performance optimization */
+.glass-container,
+.project-card,
+.experience-1,
+.experience-2,
+.who-am-i,
+.cyclone-img,
+.portrait,
+.about-me {
+  will-change: transform, opacity;
+}
+
+/* Enhanced gradient animations */
+#isu, #opportunities, #name {
+  background-size: 200% 200%;
+  animation: gradient-flow 3s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Smooth scrolling fallback */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading state */
+body {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Mobile animation adjustments */
+@media screen and (max-width: 768px) {
+  .project-card:hover {
+    transform: translateY(-5px) scale(1.01);
+  }
+  
+  /* Reduce motion for mobile performance */
+  .main h2 {
+    min-height: 60px;
+  }
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
